@@ -22,37 +22,60 @@ public class Animal {
 
     }
 
-    //Getters y Setters
+    /**
+     * 
+     * @param nom the nombre to set
+     */
     public void setNombre(String nom){
 
         nombre = nom;
 
     }
 
+    /**
+     * 
+     * @return the nombre
+     */
     public String getNombre(){
 
         return nombre;
 
     }
 
+    /**
+     * 
+     * @param des the descripcion to set
+     */
     public void setDescripcion(String des){
 
         nombre = des;
 
     }
 
+    /**
+     * 
+     * @return the descripcion
+     */
     public String getDescripcion(){
 
         return descripcion;
 
     }
 
+    /**
+     * 
+     * @param info the informacion to set
+     */
     public void setInformacion(String info){
 
         nombre = info;
 
     }
 
+    /**
+     * 
+     * @return the informacion
+     */
     public String getInformacion(){
 
         return informacion;
