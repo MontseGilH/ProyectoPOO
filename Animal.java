@@ -14,12 +14,10 @@ public class Animal {
     private String informacion;
 
 
-    public Animal(){
-
-        nombre = "";
-        descripcion = "";
-        informacion = "";
-
+    public Animal(String nombre, String descripcion, String informacion){
+        this.setNombre(nombre);
+        this.setDescripcion(descripcion);
+        this.setInformacion(informacion);
     }
 
     /**
@@ -27,9 +25,7 @@ public class Animal {
      * @param nom the nombre to set
      */
     public void setNombre(String nom){
-
-        nombre = nom;
-
+        this.nombre = nom;
     }
 
     /**
@@ -37,9 +33,7 @@ public class Animal {
      * @return the nombre
      */
     public String getNombre(){
-
         return nombre;
-
     }
 
     /**
@@ -47,9 +41,7 @@ public class Animal {
      * @param des the descripcion to set
      */
     public void setDescripcion(String des){
-
-        nombre = des;
-
+        this.descripcion = des;
     }
 
     /**
@@ -57,9 +49,7 @@ public class Animal {
      * @return the descripcion
      */
     public String getDescripcion(){
-
         return descripcion;
-
     }
 
     /**
@@ -67,9 +57,7 @@ public class Animal {
      * @param info the informacion to set
      */
     public void setInformacion(String info){
-
-        nombre = info;
-
+        this.informacion = info;
     }
 
     /**
@@ -77,9 +65,7 @@ public class Animal {
      * @return the informacion
      */
     public String getInformacion(){
-
         return informacion;
-
     }
 
 }
