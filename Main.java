@@ -9,8 +9,7 @@ Clase main
 
 public class Main {
     public static void main(String[] args){
-       Animal a = new Animal("nombre", "descripcion", "informacion");
-       Controlador.agregarAnimal(a);
+    
        
     }
 

@@ -1,7 +1,7 @@
 /******************************************************************
 Ultima modificacion: 30/09/2021
 
-Clase controlador
+Clase controlador maneja todos los arhivos del programa
 @file Controlador.java
 @author Montserrat
 @version 1.0, 30/09/2021
