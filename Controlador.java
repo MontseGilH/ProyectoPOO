@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Controlador {
-    public static void guardarEnFile(String nombreArchivo, String texto, boolean append) throws IOException{
+    public void guardarEnFile(String nombreArchivo, String texto, boolean append) throws IOException{
         File file1 = new File(nombreArchivo);
         FileWriter fw = new FileWriter(file1,append);
         PrintWriter pw = new PrintWriter(fw);
@@ -23,21 +23,21 @@ public class Controlador {
         pw.close();
     }
 
-    public static void agregarAnimal(Animal a){
+    public void agregarAnimal(Animal a){
         try{
             guardarEnFile("animalesFile.txt", a.animalString(), true); 
         } catch (IOException e) {
             System.out.println("Error al agregar Animal");
         }
     }
-    public static void agregarUsuario(Usuario u){
+    public void agregarUsuario(Usuario u){
         try{
             guardarEnFile("registro.txt", u.userString(), true); 
         } catch (IOException e) {
             System.out.println("Error al agregar usuario");
         }
     }
-    public static void agregarOrganizacion(Organizaciones o){
+    public void agregarOrganizacion(Organizaciones o){
         try{
             guardarEnFile("organizacionesFile.txt", o.organizacionesString(), true); 
         } catch (IOException e) {
@@ -45,7 +45,7 @@ public class Controlador {
         }
     }
 
-    public static ArrayList<Animal> leerAnimalesDelArchivo(){
+    public ArrayList<Animal> leerAnimalesDelArchivo(){
         ArrayList<Animal> listaAnimales = new ArrayList<Animal>();
         try{
             File file = new File("animalesFile.txt");
@@ -70,7 +70,7 @@ public class Controlador {
         
     }
 
-    public static ArrayList<Usuario> leerUsariosDelArchivo(){
+    public ArrayList<Usuario> leerUsariosDelArchivo(){
         ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
         try{
             File file = new File("registro.txt");
@@ -93,7 +93,7 @@ public class Controlador {
         return listaUsuarios;
     }
 
-    public static ArrayList<Organizaciones> leerOrganizacionesDelArchivo(){
+    public ArrayList<Organizaciones> leerOrganizacionesDelArchivo(){
         ArrayList<Organizaciones> listaOrganizaciones = new ArrayList<Organizaciones>();
         try{
             File file = new File("organizacionesFile.txt");
