@@ -6,6 +6,7 @@ Clase controlador maneja todos los arhivos del programa
 @author Montserrat
 @version 1.0, 30/09/2021
 ******************************************************************/
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
