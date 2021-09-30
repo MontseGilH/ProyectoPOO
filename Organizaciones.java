@@ -10,48 +10,48 @@ Clase organizaciones
 
 public class Organizaciones {
 
-    private String Nombre;
-    private String AnnioDeCreacion;
-    private String Lugar;
-    private String InformacionDeContacto;
-    private String Informacion;
+    private String nombre;
+    private String annioDeCreacion;
+    private String lugar;
+    private String informacionDeContacto;
+    private String informacion;
 
-    public Organizaciones(String Nombre, String AnnioDeCreacion, String Lugar, String InformacionDeContacto, String Informacion) {
-        this.setNombre(Nombre);
-        this.setAnnioDeCreacion(AnnioDeCreacion);
-        this.setLugar(Lugar);
-        this.setInformacionDeContacto(InformacionDeContacto);
-        this.setInformacion(Informacion);
+    public Organizaciones(String nombre, String annioDeCreacion, String lugar, String informacionDeContacto, String informacion) {
+        this.setNombre(nombre);
+        this.setAnnioDeCreacion(annioDeCreacion);
+        this.setLugar(lugar);
+        this.setInformacionDeContacto(informacionDeContacto);
+        this.setInformacion(informacion);
     }
     public void setNombre(String nom){
-        this.Nombre=nom;
+        this.nombre=nom;
     }
     public String getNombre(){
-        return Nombre;
+        return nombre;
     }
-    public void setAnnioDeCreacion(String Annio){
-        this.AnnioDeCreacion=Annio;
+    public void setAnnioDeCreacion(String annio){
+        this.annioDeCreacion=annio;
     }
     public String getAnnioDeCreacion(){
-        return AnnioDeCreacion;
+        return annioDeCreacion;
     }
-    public void setLugar(String Lug){
-        this.Lugar=Lug;
+    public void setLugar(String lug){
+        this.lugar=lug;
     }
     public String getLugar(){
-        return Lugar;
+        return lugar;
     }
-    public void setInformacionDeContacto(String InfoC){
-        this.InformacionDeContacto=InfoC;
+    public void setInformacionDeContacto(String infoC){
+        this.informacionDeContacto=infoC;
     }
     public String getInformacionDeContacto() {
-        return InformacionDeContacto;
+        return informacionDeContacto;
     }
-    public void setInformacion(String Info){
-        this.Informacion=Info;
+    public void setInformacion(String info){
+        this.informacion=info;
     }
     public String getInformacion(){
-        return Informacion;
+        return informacion;
     }
 
     }
