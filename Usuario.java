@@ -47,6 +47,32 @@ public class Usuario{
         String devolver = this.getUser()+"|"+this.getPassword()+"|"+this.getCorreoElectronico();
         return devolver;
     }
+
+    public boolean revisarUsuario(String usuario){
+        boolean es = false;
+        try{
+            if (this.getUser().equalsIgnoreCase(usuario)){
+                es = true;
+            }
+        } catch(Exception e){
+            System.out.println("Error al revisar existencia de usuario");
+        }
+        return es;
+    }
+
+    public boolean revisarUsuarioYPassword(String usuario,String pass){
+        boolean es = false;
+        try{
+            if (this.revisarUsuario(usuario)){
+                if (this.getPassword().equalsIgnoreCase(pass)){
+                    es = true;
+                }
+            }
+        } catch(Exception e){
+            System.out.println("Error al revisar existencia de usuario y password");
+        }
+        return es;
+    }
     
 }
 
