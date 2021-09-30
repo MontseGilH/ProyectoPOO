@@ -7,15 +7,16 @@ Clase Usuario, maneja el login
 @version 1.0, 30/09/2021
 ******************************************************************/
 
-import java.io.Serializable;
 
-public class Usuario implements Serializable{
+public class Usuario{
     private String user;
     private String password;
     private String correoElectronico;
 
     public Usuario(String user, String password, String correoElectronico){
-        
+        this.setUser(user);
+        this.setPassword(password);
+        this.setCorreoElectronico(correoElectronico);
     }
 
     public String getCorreoElectronico() {
@@ -41,5 +42,11 @@ public class Usuario implements Serializable{
     public void setUser(String user) {
         this.user = user;
     }
+
+    public String userString(){
+        String devolver = this.getUser()+" "+this.getPassword()+" "+this.getCorreoElectronico();
+        return devolver;
+    }
+    
 }
 
