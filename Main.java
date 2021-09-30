@@ -9,9 +9,7 @@ Clase main
 
 public class Main {
     public static void main(String[] args){
-        //Manager m = new Manager();
-        //Usuario l = new Usuario("hola","123","correo");
-        //m.ingresarUsuario(l);
+       
         
     }
 }
