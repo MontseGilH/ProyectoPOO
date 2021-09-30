@@ -81,9 +81,8 @@ public class Controlador {
                 
                 String user = items[0];
                 String password = items[1];
-                String correoElectronico = items[2];
 
-                Usuario nuevoUsuario = new Usuario(user, password, correoElectronico);
+                Usuario nuevoUsuario = new Usuario(user, password);
                 listaUsuarios.add(nuevoUsuario);
             }
             s.close();

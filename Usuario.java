@@ -11,20 +11,11 @@ Clase Usuario, maneja el login
 public class Usuario{
     private String user;
     private String password;
-    private String correoElectronico;
 
-    public Usuario(String user, String password, String correoElectronico){
+    public Usuario(String user, String password){
         this.setUser(user);
         this.setPassword(password);
-        this.setCorreoElectronico(correoElectronico);
-    }
-
-    public String getCorreoElectronico() {
-        return correoElectronico;
-    }
-
-    public void setCorreoElectronico(String correoElectronico) {
-        this.correoElectronico = correoElectronico;
+        
     }
 
     public String getPassword() {
@@ -44,7 +35,7 @@ public class Usuario{
     }
 
     public String userString(){
-        String devolver = this.getUser()+"|"+this.getPassword()+"|"+this.getCorreoElectronico();
+        String devolver = this.getUser()+"|"+this.getPassword();
         return devolver;
     }
 
