@@ -54,4 +54,9 @@ public class Organizaciones {
         return informacion;
     }
 
+    public String organizacionesString(){
+        String s = this.getNombre()+"|"+this.getAnnioDeCreacion()+"|"+this.getLugar()+"|"+this.getInformacionDeContacto()+"|"+this.getInformacion();
+        return s;
+    }
+
     }

@@ -44,7 +44,7 @@ public class Usuario{
     }
 
     public String userString(){
-        String devolver = this.getUser()+" "+this.getPassword()+" "+this.getCorreoElectronico();
+        String devolver = this.getUser()+"|"+this.getPassword()+"|"+this.getCorreoElectronico();
         return devolver;
     }
     

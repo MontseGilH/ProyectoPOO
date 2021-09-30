@@ -68,4 +68,9 @@ public class Animal {
         return informacion;
     }
 
+    public String animalString(){
+        String s = "\n"+this.getNombre()+"|"+this.getDescripcion()+"|"+this.getInformacion();
+        return s;
+    }
+
 }
