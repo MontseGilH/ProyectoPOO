@@ -34,11 +34,27 @@ public class Main {
             }else if (opcion ==3){
 
             }else if (opcion==4){
+                boolean seguir = false;
                 ArrayList<Usuario> usuariosD = c.leerUsariosDelArchivo();
                 System.out.println("Ingrese su usuario: ");
                 String u = scan.nextLine();
-                System.out.println("Ingrese el password: ");
-                String p = scan.nextLine();
+                for (Usuario h:usuariosD){
+                    if (h.revisarUsuario(u)){
+                        seguir = true;
+                        break;
+                    }
+                }
+                if (seguir){
+                    System.out.println("Ingrese contraseña: ");
+                    String
+                } else{
+                    System.out.println("Nombre de usuario no encontrado");
+                }
+                //System.out.println("Ingrese el password: ");
+                //String p = scan.nextLine();
+                //for (Usuario l:usuariosD){
+
+                //}
 
             }else if (opcion ==5){
 
