@@ -18,27 +18,59 @@ public class Usuario{
         
     }
 
+
+    
+    /** 
+     * regresa la variable password
+     * @return String
+     */
     public String getPassword() {
         return password;
     }
 
+    
+    /** 
+     * inserta el valor a la variable password
+     * @param password
+     */
     public void setPassword(String password) {
         this.password = password;
     }
 
+    
+    /** 
+     * regresa la variable user
+     * @return String
+     */
     public String getUser() {
         return user;
     }
 
+    
+    /** 
+     * inserta la variable user
+     * @param user
+     */
     public void setUser(String user) {
         this.user = user;
     }
 
+    
+    /** 
+     * regresa el usuario y contraseña
+     * @return String
+     */
     public String userString(){
         String devolver = "\n"+this.getUser()+"|"+this.getPassword();
         return devolver;
     }
 
+    
+    /** 
+     * verifica si el usuario existe
+     * @param usuario
+     * @return boolean
+     */
     public boolean revisarUsuario(String usuario){
         boolean es = false;
         try{
@@ -51,6 +83,13 @@ public class Usuario{
         return es;
     }
 
+    
+    /** 
+     * verifica si el usuario conincide con la contraseña
+     * @param usuario
+     * @param pass
+     * @return boolean
+     */
     public boolean revisarUsuarioYPassword(String usuario,String pass){
         boolean es = false;
         try{
