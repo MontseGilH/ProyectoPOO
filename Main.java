@@ -46,7 +46,7 @@ public class Main {
                 }
                 if (seguir){
                     System.out.println("Ingrese contraseña: ");
-                    String
+                    
                 } else{
                     System.out.println("Nombre de usuario no encontrado");
                 }
