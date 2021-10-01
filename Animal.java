@@ -21,7 +21,7 @@ public class Animal {
     }
 
     /**
-     * 
+     * Asigna el valor a la variable nombre
      * @param nom the nombre to set
      */
     public void setNombre(String nom){
@@ -29,7 +29,7 @@ public class Animal {
     }
 
     /**
-     * 
+     * Devuelve el valor de la variable nombre
      * @return the nombre
      */
     public String getNombre(){
@@ -37,7 +37,7 @@ public class Animal {
     }
 
     /**
-     * 
+     * Asigna el valor a la variable descripcion
      * @param des the descripcion to set
      */
     public void setDescripcion(String des){
@@ -45,7 +45,7 @@ public class Animal {
     }
 
     /**
-     * 
+     * Devuelve el valor de la variable descripcion
      * @return the descripcion
      */
     public String getDescripcion(){
@@ -53,7 +53,7 @@ public class Animal {
     }
 
     /**
-     * 
+     * Asigna el valor de la variable informacion
      * @param info the informacion to set
      */
     public void setInformacion(String info){
@@ -61,13 +61,17 @@ public class Animal {
     }
 
     /**
-     * 
+     * Devuelve el valor de la variable informacion
      * @return the informacion
      */
     public String getInformacion(){
         return informacion;
     }
 
+    /**
+     * Devuelve el valor de las tres variables
+     * @return string
+     */
     public String animalString(){
         String s = "\n"+this.getNombre()+"|"+this.getDescripcion()+"|"+this.getInformacion();
         return s;
