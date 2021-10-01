@@ -11,6 +11,12 @@ Estas funciones estan enfocadas a el controlador del programa
 import java.util.ArrayList;
 
 public class Manejador {
+    
+    /** 
+     * Funcion para desplegar los animales disponibles
+     * Esta funcion esta enfocada a la programacion en consola
+     * @param a animal
+     */
     public void desplegarAnimales(ArrayList<Animal> a){
         try{
             int i = 1;
@@ -27,6 +33,12 @@ public class Manejador {
         }
     }
 
+    
+    /** 
+     * Funcion para desplegar las organizaciones disponibles
+     * Esta funcion esta enfocada a la programacion en consola
+     * @param o organizaciones
+     */
     public void desplegarOrganizaciones(ArrayList<Organizaciones> o){
         try{
             int i = 1;

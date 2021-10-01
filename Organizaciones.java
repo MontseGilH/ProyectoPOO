@@ -1,5 +1,5 @@
 /******************************************************************
-Ultima modificacion: 28/09/2021
+Ultima modificacion: 29/09/2021
 
 Clase organizaciones
 @file Organizaciones.java
@@ -23,70 +23,104 @@ public class Organizaciones {
         this.setInformacionDeContacto(informacionDeContacto);
         this.setInformacion(informacion);
     }
-    /* Asigna el valor a la variable nombre
-     * @Param nom the nombre to set
-     */
+   
 
+    
+    /** 
+     * Establece el nombre de la organizacion
+     * @param nom nombre de la organizacion
+     */
     public void setNombre(String nom){
         this.nombre=nom;
     }
-    /* Devuelve el valor de la variable nombre
-    * @return the nombre
-    */
+   
+    
+    /** 
+     * Regresa el nombre de la organizacion
+     * @return String
+     */
     public String getNombre(){
         return nombre;
     }
-    /* Asigna valor a la variable AnnioDeCreacion
-    * @Param annio the annioDeCreacion to set
+    
+    
+    /** 
+     * Establece el anio de creacion de la organizacion
+     * @param annio anio de creacion
      */
     public void setAnnioDeCreacion(String annio){
         this.annioDeCreacion=annio;
     }
-    /* Devuelve el valor de la variable annioDeCreacion
-    * @return the annioDeCreacion
+   
+    
+    /** 
+     * Devuelve el anio de creacion de la organizacion
+     * @return String
      */
     public String getAnnioDeCreacion(){
         return annioDeCreacion;
     }
-    /* Asigna el valor a la variable lugar
-    * @Param lug the lugar to set
+   
+    
+    /** 
+     * Establece el lugar de la organizacion
+     * @param lug lugar de la organizacion
      */
     public void setLugar(String lug){
         this.lugar=lug;
     }
-    /* Devuelve el valor de la variable lugar
-    *@return the lugar
+   
+    
+    /** 
+     * Regresa el lugar de la organizacion
+     * @return String
      */
     public String getLugar(){
         return lugar;
     }
-    /* Asigna el valor a la variable informacionDeContacto
-    *@Param infoC the informacionDeContacto to set
+    
+    
+    /** 
+     * Establece la informacion de contecto de la organizacion
+     * @param infoC informacion de contacto
      */
     public void setInformacionDeContacto(String infoC){
         this.informacionDeContacto=infoC;
     }
-    /* Devuelve el valor de la variable informacionDeContacto
-    *@return othe informacionDeContacto
+  
+    
+    /** 
+     * Devuelve la informacion de contacto de la organizacion
+     * @return String
      */
     public String getInformacionDeContacto() {
         return informacionDeContacto;
     }
-    /* Asigna el valor de la variable informacion
-    *@Param info the informacion to set
+    
+    
+    /** 
+     * Establece la informacion acerca de la organizacion
+     * @param info informacion
      */
     public void setInformacion(String info){
         this.informacion=info;
     }
-    /* Devuelve el valor de la variable informacion
-    *@return the informacion
+   
+    
+    /** 
+     * Devuelve informacion acerca de la organizacion
+     * @return String
      */
     public String getInformacion(){
         return informacion;
     }
 
-    /* Asigna valor a la variable s
-    @return the s
+    
+    
+    /** 
+     * Devuelve un string con todas las variables de la organizacion
+     * Esto sirve para meterlas al file
+     * @return String
      */
     public String organizacionesString(){
         String s = "\n"+this.getNombre()+"|"+this.getAnnioDeCreacion()+"|"+this.getLugar()+"|"+this.getInformacionDeContacto()+"|"+this.getInformacion();

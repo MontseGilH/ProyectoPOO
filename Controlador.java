@@ -15,6 +15,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Controlador {
+    
+    /** 
+     * Este metodo sirve para introducir informacion en un archivo
+     * @param nombreArchivo  se necesita el path relativo
+     * @param texto  texto que se agregara
+     * @param append determina si la informacion va al final
+     * @throws IOException
+     */
     public static void guardarEnFile(String nombreArchivo, String texto, boolean append) throws IOException{
         File file1 = new File(nombreArchivo);
         FileWriter fw = new FileWriter(file1,append);
@@ -23,6 +31,11 @@ public class Controlador {
         pw.close();
     }
 
+    
+    /** 
+     * Este metodo sirve para ingresar animales al file de animales
+     * @param a animal
+     */
     public static void agregarAnimal(Animal a){
         try{
             guardarEnFile("animalesFile.txt", a.animalString(), true); 
@@ -30,6 +43,11 @@ public class Controlador {
             System.out.println("Error al agregar Animal");
         }
     }
+    
+    /** 
+     * Este metodo agrega usuarios a el file
+     * @param u usuario
+     */
     public static void agregarUsuario(Usuario u){
         try{
             guardarEnFile("registro.txt", u.userString(), true); 
@@ -37,6 +55,11 @@ public class Controlador {
             System.out.println("Error al agregar usuario");
         }
     }
+    
+    /** 
+     * Este metodo agrega organizaciones con todo y su informacion al file
+     * @param o organizacion
+     */
     public static void agregarOrganizacion(Organizaciones o){
         try{
             guardarEnFile("organizacionesFile.txt", o.organizacionesString(), true); 
@@ -45,6 +68,12 @@ public class Controlador {
         }
     }
 
+    
+    /** 
+     * Este metodo lee el archivo y devuelve un array de animales
+     * Sirve para poder utilizar los animales como objetos junto a sus metodos
+     * @return ArrayList<Animal>
+     */
     public static ArrayList<Animal> leerAnimalesDelArchivo(){
         ArrayList<Animal> listaAnimales = new ArrayList<Animal>();
         try{
@@ -70,6 +99,12 @@ public class Controlador {
         
     }
 
+    
+    /** 
+     * Este metodo lee el archivo y devuelve un array de usuarios
+     * Sirve para poder utilizar los usuarios como objetos junto a sus metodos
+     * @return ArrayList<Usuario>
+     */
     public static ArrayList<Usuario> leerUsariosDelArchivo(){
         ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
         try{
@@ -93,6 +128,12 @@ public class Controlador {
         return listaUsuarios;
     }
 
+    
+    /** 
+     * Este metodo lee el archivo y devuelve un array de organizaciones
+     * Sirve para poder utilizar las organizaciones como objetos junto a sus metodos
+     * @return ArrayList<Organizaciones>
+     */
     public static ArrayList<Organizaciones> leerOrganizacionesDelArchivo(){
         ArrayList<Organizaciones> listaOrganizaciones = new ArrayList<Organizaciones>();
         try{

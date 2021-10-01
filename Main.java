@@ -4,7 +4,7 @@ Ultima modificacion: 30/09/2021
 Clase main
 @file Main.java
 @author Montserrat Gil
-@version 1.0, 28/09/2021
+@version 1.0, 30/09/2021
 ******************************************************************/
 
 import java.util.ArrayList;
@@ -12,9 +12,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        //variables de apoyo
         Scanner scan = new Scanner(System.in);
         Manejador m = new Manejador();
         int opcion = 0;
+
+        //menu principal del programa
         while (opcion !=5){
             System.out.println("\n\nBienvenido al programa que te informa acerca de animales en peligro de extincion.\nTambien puedes consultar a que organizaciones puedes ayudar.\nElige que quieres hacer: ");
 			System.out.println("1. Ver animales en peligro");
@@ -45,6 +48,7 @@ public class Main {
 
             }else if (opcion==4){
                 //iniciar sesion
+                //parte solo para administradores con usuario y password
                 boolean seguir = false;
                 boolean seguir2 = false;
                 ArrayList<Usuario> usuariosD = Controlador.leerUsariosDelArchivo();

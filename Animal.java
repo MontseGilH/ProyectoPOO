@@ -69,7 +69,8 @@ public class Animal {
     }
 
     /**
-     * Devuelve el valor de las tres variables
+     * Devuelve el valor de las tres variables de forma String
+     * Sirve para pasarlo a un archivo
      * @return string
      */
     public String animalString(){

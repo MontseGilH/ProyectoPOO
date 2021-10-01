@@ -1,9 +1,9 @@
 /******************************************************************
-Ultima modificacion: 28/09/2021
+Ultima modificacion: 30/09/2021
 
 Clase Usuario, maneja el login
 @file Usuario.java
-@author Montserrat
+@author Montserrat y Joab
 @version 1.0, 30/09/2021
 ******************************************************************/
 
@@ -18,8 +18,6 @@ public class Usuario{
         
     }
 
-
-    
     /** 
      * regresa la variable password
      * @return String
@@ -57,7 +55,8 @@ public class Usuario{
 
     
     /** 
-     * regresa el usuario y contraseña
+     * regresa el usuario y contraseña en un String
+     * Sirve para luego pasarlo a archivos
      * @return String
      */
     public String userString(){
