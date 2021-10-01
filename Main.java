@@ -23,7 +23,8 @@ public class Main {
 			System.out.println("4. Iniciar sesion (esta funcion es solo para administradores)");
 			System.out.println("5. Salir\n\n");
 
-            opcion = obtenerInt();
+            opcion = scan.nextInt();
+            scan.nextLine();
 
             if (opcion==1){
                 //desplegar los animales
@@ -49,6 +50,7 @@ public class Main {
                 ArrayList<Usuario> usuariosD = Controlador.leerUsariosDelArchivo();
                 System.out.println("Ingrese su usuario: ");
                 String u = scan.nextLine();
+                
                 for (Usuario h:usuariosD){
                     if (h.revisarUsuario(u)){
                         seguir = true;
@@ -75,7 +77,8 @@ public class Main {
                         System.out.println("2. Ingresar nuevo Animal");
                         System.out.println("3. Ingresar nueva Organizacion");
                         System.out.println("4. Salir");
-                        opcion2 = obtenerInt();
+                        opcion2 = scan.nextInt();
+                        scan.nextLine();
                         if (opcion2==1){
                             // Ingresar usuario
                             System.out.println("A continuacion ingrese el nuevo usuario: ");
@@ -118,13 +121,16 @@ public class Main {
                             System.out.println("\nPorfavor ingrese una opcion valida.");
                         }
                     }
-                } else{
-                    System.out.println("Usuario o password incorrectos");
+                } 
+                if (seguir){
+                    if (!seguir2){
+                        System.out.println("Usuario o password incorrectos");
+                    }
                 }
                 
 
             }else if (opcion ==5){
-
+                //Salir
             } else{
                 System.out.println("\nPor favor ingrese una opcion valida.");
             }
@@ -133,29 +139,4 @@ public class Main {
         scan.close();
     }
 
-
-
-
-
-
-
-
-
-
-    public static int obtenerInt(){
-        Scanner scan = new Scanner(System.in);
-        boolean sies = false;
-        int n = 0;
-        while (!sies){
-            try {
-                n = scan.nextInt();
-                scan.nextLine();
-                sies = true;
-            } catch (Exception e){
-                System.out.println("Por favor ingrese un numero entero");
-            }
-        }
-        scan.close();
-        return n;
-    }
 }

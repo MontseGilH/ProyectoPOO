@@ -3,3 +3,4 @@ nombre|descripcion|informacion
 nombre|descripcion|informacion
 nombr23|descripcion|informacion
 nombre|descripcion|informacion
+Rinoceronte|Grande y gris|Es un animal en peligro de extincion
