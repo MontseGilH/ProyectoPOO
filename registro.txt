@@ -1,0 +1,3 @@
+usuario|password
+prueba|123
+prueba2|12345
