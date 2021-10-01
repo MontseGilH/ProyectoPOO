@@ -14,7 +14,6 @@ public class Main {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         Manejador m = new Manejador();
-        Controlador c = new Controlador();
         int opcion = 0;
         while (opcion !=5){
             System.out.println("\n\nBienvenido al programa que te informa acerca de animales en peligro de extincion.\nTambien puedes consultar a que organizaciones puedes ayudar.\nElige que quieres hacer.");
@@ -27,7 +26,7 @@ public class Main {
             opcion = obtenerInt();
 
             if (opcion==1){
-                ArrayList<Animal> animalesD = c.leerAnimalesDelArchivo();
+                ArrayList<Animal> animalesD = Controlador.leerAnimalesDelArchivo();
                 m.desplegarAnimales(animalesD);
             } else if (opcion ==2){
 
@@ -35,7 +34,7 @@ public class Main {
 
             }else if (opcion==4){
                 boolean seguir = false;
-                ArrayList<Usuario> usuariosD = c.leerUsariosDelArchivo();
+                ArrayList<Usuario> usuariosD = Controlador.leerUsariosDelArchivo();
                 System.out.println("Ingrese su usuario: ");
                 String u = scan.nextLine();
                 for (Usuario h:usuariosD){
