@@ -1,3 +1,7 @@
 usuario|password
 prueba|123
-prueba2|12345user|password
+prueba2|12345
+user|password
+user1|password1
+nuevo|usuario
+prueba|usuario

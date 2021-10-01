@@ -35,7 +35,7 @@ public class Usuario{
     }
 
     public String userString(){
-        String devolver = this.getUser()+"|"+this.getPassword();
+        String devolver = "\n"+this.getUser()+"|"+this.getPassword();
         return devolver;
     }
 
