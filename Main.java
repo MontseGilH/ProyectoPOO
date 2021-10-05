@@ -15,10 +15,10 @@ public class Main {
         //variables de apoyo
         Scanner scan = new Scanner(System.in);
         Manejador m = new Manejador();
-        int opcion = 0;
+        String opcion = "0";
 
         //menu principal del programa
-        while (opcion !=5){
+        while (!opcion.equalsIgnoreCase("5")){
             System.out.println("\n\nBienvenido al programa que te informa acerca de animales en peligro de extincion.\nTambien puedes consultar a que organizaciones puedes ayudar.\nElige que quieres hacer: ");
 			System.out.println("1. Ver animales en peligro");
 			System.out.println("2. Consultar organizaciones junto con su informacion de contacto");
@@ -26,27 +26,26 @@ public class Main {
 			System.out.println("4. Iniciar sesion (esta funcion es solo para administradores)");
 			System.out.println("5. Salir\n\n");
 
-            opcion = scan.nextInt();
-            scan.nextLine();
+            opcion = scan.nextLine();
 
-            if (opcion==1){
+            if (opcion.equalsIgnoreCase("1")){
                 //desplegar los animales
                 ArrayList<Animal> animalesD = Controlador.leerAnimalesDelArchivo();
                 m.desplegarAnimales(animalesD);
 
-            } else if (opcion ==2){
+            } else if (opcion.equalsIgnoreCase("2")){
                 // desplegar las organizaciones
                 ArrayList<Organizaciones> organizacionesD = Controlador.leerOrganizacionesDelArchivo();
                 m.desplegarOrganizaciones(organizacionesD);
 
-            }else if (opcion ==3){
+            }else if (opcion.equalsIgnoreCase("3")){
                 // desplegar la mision y vision
                 System.out.println("-------- Vision -------");
                 System.out.println("Lograr la concientizacion de la importancia de la biodiversidad y su cuidado.");
                 System.out.println("-------- Mision -------");
                 System.out.println("Difundir informacion de los animales, para un mayor entendimiento de su aporte a la biodiversidad.");
 
-            }else if (opcion==4){
+            }else if (opcion.equalsIgnoreCase("4")){
                 //iniciar sesion
                 //parte solo para administradores con usuario y password
                 boolean seguir = false;
@@ -74,16 +73,16 @@ public class Main {
                     System.out.println("Nombre de usuario no encontrado");
                 }
                 if (seguir2){
-                    int opcion2 = 0;
-                    while (opcion2 !=4){
+                    String opcion2 = "0";
+                    while (!opcion2.equalsIgnoreCase("4")){
                         System.out.println("\nBienvenido. Seleccione la opcion a realizar: ");
                         System.out.println("1. Ingresar nuevo Usuario");
                         System.out.println("2. Ingresar nuevo Animal");
                         System.out.println("3. Ingresar nueva Organizacion");
                         System.out.println("4. Salir");
-                        opcion2 = scan.nextInt();
-                        scan.nextLine();
-                        if (opcion2==1){
+                        opcion2 = scan.nextLine();
+
+                        if (opcion2.equalsIgnoreCase("1")){
                             // Ingresar usuario
                             System.out.println("A continuacion ingrese el nuevo usuario: ");
                             String nU = scan.nextLine();
@@ -92,7 +91,7 @@ public class Main {
                             Usuario nUP = new Usuario(nU, nP);
                             Controlador.agregarUsuario(nUP);
                             
-                        } else if (opcion2==2){
+                        } else if (opcion2.equalsIgnoreCase("2")){
                             // Ingresar animal
                             System.out.println("A continuacion ingrese el nombre del animal: ");
                             String nombr = scan.nextLine();
@@ -103,7 +102,7 @@ public class Main {
                             Animal nA = new Animal(nombr,descr,inf);
                             Controlador.agregarAnimal(nA);
 
-                        } else if (opcion2==3){
+                        } else if (opcion2.equalsIgnoreCase("3")){
                             //Ingresar organizacion
                             System.out.println("A continuacion ingrese el nombre de la organizacion: ");
                             String nO = scan.nextLine();
@@ -118,7 +117,7 @@ public class Main {
                             Organizaciones nOrg = new Organizaciones(nO, anio, lug, infC, infG);
                             Controlador.agregarOrganizacion(nOrg);
 
-                        } else if (opcion2==4){
+                        } else if (opcion2.equalsIgnoreCase("4")){
                             //Salir
                             System.out.println("Saliendo de la sesion de administrador");
                         } else{
@@ -133,7 +132,7 @@ public class Main {
                 }
                 
 
-            }else if (opcion ==5){
+            }else if (opcion.equalsIgnoreCase("5")){
                 //Salir
             } else{
                 System.out.println("\nPor favor ingrese una opcion valida.");
