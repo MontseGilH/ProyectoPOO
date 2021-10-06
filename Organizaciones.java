@@ -1,7 +1,7 @@
 /******************************************************************
 Ultima modificacion: 29/09/2021
 
-Clase organizaciones
+Clase organizaciones: maneja la información de las organizaciones
 @file Organizaciones.java
 @author Jose
 @version 1.0, 29/09/2021
@@ -16,6 +16,14 @@ public class Organizaciones {
     private String informacionDeContacto;
     private String informacion;
 
+    /**
+     * Método constructor
+     * @param nombre
+     * @param annioDeCreacion
+     * @param lugar
+     * @param informacionDeContacto
+     * @param informacion
+     */
     public Organizaciones(String nombre, String annioDeCreacion, String lugar, String informacionDeContacto, String informacion) {
         this.setNombre(nombre);
         this.setAnnioDeCreacion(annioDeCreacion);
