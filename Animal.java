@@ -1,19 +1,23 @@
 /******************************************************************
 Ultima modificacion: 28/09/2021
 
-Clase animal
+Clase animal: esta clase se utiliza para el manejo de la información de los animales
 @file Animal.java
 @author Lourdes
 @version 1.0, 28/09/2021
 ******************************************************************/
 
 public class Animal {
- 
+
     private String nombre;
     private String descripcion;
     private String informacion;
 
-
+     /**
+     * Método constructor
+     * @param nombre, despripcion, informacion
+     * @return ninguno
+     */
     public Animal(String nombre, String descripcion, String informacion){
         this.setNombre(nombre);
         this.setDescripcion(descripcion);
