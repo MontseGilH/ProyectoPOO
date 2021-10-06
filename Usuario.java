@@ -14,7 +14,8 @@ public class Usuario{
 
     /**
      * Método constructor
-     * @param user,password
+     * @param user
+     * @param password
      */
     public Usuario(String user, String password){
         this.setUser(user);

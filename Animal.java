@@ -13,10 +13,11 @@ public class Animal {
     private String descripcion;
     private String informacion;
 
-     /**
+    /**
      * Método constructor
-     * @param nombre, despripcion, informacion
-     * @return ninguno
+     * @param nombre
+     * @param descripcion
+     * @param informacion
      */
     public Animal(String nombre, String descripcion, String informacion){
         this.setNombre(nombre);
