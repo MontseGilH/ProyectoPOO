@@ -82,7 +82,7 @@ public class Usuario{
                 es = true;
             }
         } catch(Exception e){
-            System.out.println("Error al revisar existencia de usuario");
+            
         }
         return es;
     }
@@ -103,7 +103,7 @@ public class Usuario{
                 }
             }
         } catch(Exception e){
-            System.out.println("Error al revisar existencia de usuario y password");
+            
         }
         return es;
     }

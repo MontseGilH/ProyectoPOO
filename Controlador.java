@@ -40,7 +40,7 @@ public class Controlador {
         try{
             guardarEnFile("animalesFile.txt", a.animalString(), true); 
         } catch (IOException e) {
-            System.out.println("Error al agregar Animal");
+            
         }
     }
     
@@ -52,7 +52,7 @@ public class Controlador {
         try{
             guardarEnFile("registro.txt", u.userString(), true); 
         } catch (IOException e) {
-            System.out.println("Error al agregar usuario");
+            
         }
     }
     
@@ -64,7 +64,7 @@ public class Controlador {
         try{
             guardarEnFile("organizacionesFile.txt", o.organizacionesString(), true); 
         } catch (IOException e) {
-            System.out.println("Error al agregar usuario");
+            
         }
     }
 
@@ -93,7 +93,7 @@ public class Controlador {
             }
             s.close();
         } catch (Exception e){
-            System.out.println("Error al leer animales");
+            
         }
         return listaAnimales;
         
@@ -123,7 +123,7 @@ public class Controlador {
             }
             s.close();
         } catch (Exception e){
-            System.out.println("Error al leer Usuarios");
+            
         }
         return listaUsuarios;
     }
@@ -155,7 +155,7 @@ public class Controlador {
             }
             s.close();
         } catch (Exception e){
-            System.out.println("Error al leer Organizaciones");
+            
         }
         return listaOrganizaciones;
         
