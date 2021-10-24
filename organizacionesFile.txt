@@ -1,2 +1,3 @@
 Organizacion 1|1998|Guatemala|5897-9993|Es una organizacion sin fines de lucro
 juntos por el mundo|1990|Guatemala|9339-3939|Organizacion sin fines de lucro
+organizacion123|1999|guatemala|5678 0909|organizacion enfocada a ayudar a los perros

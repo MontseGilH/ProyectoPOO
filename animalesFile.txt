@@ -4,3 +4,4 @@ nombre|descripcion|informacion
 nombr23|descripcion|informacion
 nombre|descripcion|informacion
 Rinoceronte|Grande y gris|Es un animal en peligro de extincion
+perro|peludo y negro|es animal domestico

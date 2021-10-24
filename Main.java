@@ -55,7 +55,7 @@ public class Main {
                 String u = scan.nextLine();
                 
                 for (Usuario h:usuariosD){
-                    if (h.revisarUsuario(u)){
+                    if (h.revisarUsuario(u)==0){
                         seguir = true;
                         break;
                     }
@@ -64,7 +64,7 @@ public class Main {
                     System.out.println("Ingrese password: ");
                     String p = scan.nextLine();
                     for (Usuario k:usuariosD){
-                        if (k.revisarUsuarioYPassword(u, p)){
+                        if (k.revisarUsuarioYPassword(u, p)==0){
                             seguir2 = true;
                             break;
                         }

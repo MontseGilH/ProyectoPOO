@@ -22,49 +22,63 @@ public class Controlador {
      * @param texto  texto que se agregara
      * @param append determina si la informacion va al final
      * @throws IOException
+     * @return funciona 
+     * true = funciona
+     * false = no funciona
      */
-    public static void guardarEnFile(String nombreArchivo, String texto, boolean append) throws IOException{
+    public static boolean guardarEnFile(String nombreArchivo, String texto, boolean append) throws IOException{
+        try{
         File file1 = new File(nombreArchivo);
         FileWriter fw = new FileWriter(file1,append);
         PrintWriter pw = new PrintWriter(fw);
         pw.write(texto);
         pw.close();
+        return true;
+        }catch(Exception e){
+            return false;
+        }
     }
 
     
     /** 
      * Este metodo sirve para ingresar animales al file de animales
      * @param a animal
+     * @return funciona
      */
-    public static void agregarAnimal(Animal a){
+    public static boolean agregarAnimal(Animal a){
         try{
             guardarEnFile("animalesFile.txt", a.animalString(), true); 
+            return true;
         } catch (IOException e) {
-            
+            return false;
         }
     }
     
     /** 
      * Este metodo agrega usuarios a el file
      * @param u usuario
+     * @return funciona
      */
-    public static void agregarUsuario(Usuario u){
+    public static boolean agregarUsuario(Usuario u){
         try{
             guardarEnFile("registro.txt", u.userString(), true); 
+            return true;
         } catch (IOException e) {
-            
+            return false;
         }
     }
     
     /** 
      * Este metodo agrega organizaciones con todo y su informacion al file
      * @param o organizacion
+     * @return funciona
      */
-    public static void agregarOrganizacion(Organizaciones o){
+    public static boolean agregarOrganizacion(Organizaciones o){
         try{
             guardarEnFile("organizacionesFile.txt", o.organizacionesString(), true); 
+            return true;
         } catch (IOException e) {
-            
+            return false;
         }
     }
 

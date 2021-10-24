@@ -5,3 +5,4 @@ user|password
 user1|password1
 nuevo|usuario
 prueba|usuario
+usuario|123

@@ -73,13 +73,15 @@ public class Usuario{
     /** 
      * verifica si el usuario existe
      * @param usuario
-     * @return boolean
+     * @return int
+     * 0 = existe
+     * 1 = no existe o error
      */
-    public boolean revisarUsuario(String usuario){
-        boolean es = false;
+    public int revisarUsuario(String usuario){
+        int es = 1;
         try{
             if (this.getUser().equalsIgnoreCase(usuario)){
-                es = true;
+                es = 0;
             }
         } catch(Exception e){
             
@@ -90,16 +92,18 @@ public class Usuario{
     
     /** 
      * verifica si el usuario conincide con la contraseña
-     * @param usuario
-     * @param pass
-     * @return boolean
+     * @param usuario usuario
+     * @param pass contraseña
+     * @return int
+     * 0 = si existe
+     * 1 = no existe o error
      */
-    public boolean revisarUsuarioYPassword(String usuario,String pass){
-        boolean es = false;
+    public int revisarUsuarioYPassword(String usuario,String pass){
+        int es = 1;
         try{
-            if (this.revisarUsuario(usuario)){
+            if (this.revisarUsuario(usuario)==0){
                 if (this.getPassword().equalsIgnoreCase(pass)){
-                    es = true;
+                    es = 0;
                 }
             }
         } catch(Exception e){
