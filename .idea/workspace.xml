@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e5607c3-f48c-4914-8db9-d83007a0546f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_base_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_base_win_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_controls_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_controls_win_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_fxml_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_graphics_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/ProyectoPOO.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/src/main/java/com/example/proyectopoo/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/src/main/java/com/example/proyectopoo/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proyectoFX/src/main/resources/com/example/proyectopoo/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoPOO.iml" afterDir="false" />
-    </list>
+    <list default="true" id="6e5607c3-f48c-4914-8db9-d83007a0546f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,16 +13,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1zwJvFRhqMKY7i4P6FfygZgvEdB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/proyectoFX" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e5607c3-f48c-4914-8db9-d83007a0546f" name="Changes" comment="" />
+      <created>1635053453100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635053453100</updated>
+      <workItem from="1635053465297" duration="32000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="oldMeFiltersMigrated" value="true" />
